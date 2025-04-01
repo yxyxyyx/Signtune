@@ -1,0 +1,23 @@
+/************* single-post-slider  ***************/
+.banner-slider .owl-nav {
+  display: none;
+}
+.banner-slider .owl-dots {
+  counter-reset: dots;
+  display: inline-block;
+  padding-left: 33px;
+}
+.banner-slider .owl-dots .owl-dot {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  width: 20px;
+  transition: 0.4s;
+}
+.banner-slider .owl-dots .owl-dot:before {
+  counter-increment: dots;
+  content: counter(dots);
+}
+.banner-slider .owl-dots .owl-dot.active {
+  font-weight: 700;
+}
